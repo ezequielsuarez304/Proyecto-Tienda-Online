@@ -1,0 +1,111 @@
+.gridBodyContactUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 20vh auto 90vh 30vh;
+    grid-template-areas: 
+    "gridHelp"
+    "gridHeader"
+    "gridNav"
+    "sectionContactUs"
+    "gridFooter"; }
+    .gridBodyContactUs .gridHelp{
+      display: flex;
+      justify-content: end;
+      background-color: #2D2D33;
+      padding: 10px 10px;
+      grid-area: gridHelp;
+    }
+    .gridBodyContactUs .gridHeader {
+      background-color: #37373f;
+      grid-area: gridHeader;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 70px;
+      align-items: center;
+    }
+    .gridNav {
+      grid-area: gridNav;
+    }
+    .gridNav a{
+      font-weight: bold;
+    }
+    .gridBodyContactUs .gridHeader .gridHeaderLogo img{
+      width: 300px;
+    }
+    .gridBodyContactUs .gridHeader .gridHeaderInput input{
+      width: 480px;
+      height: 44px;
+      border-radius: 5px;
+      border-width: 1px; 
+    }
+
+    .gridBodyContactUs .gridHeader .gridHeaderIcons img{
+      width: 30px;
+    }
+    .gridBodyContactUs .gridHeader .gridHeaderIcons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .gridBodyContactUs .sectionContactUs {
+      grid-area: sectionContactUs;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0px;
+      justify-content: center; }
+
+    .gridBodyContactUs .sectionContactUs p{
+      font-weight: bold;
+    }
+    .gridBodyContactUs .sectionContactUs label {
+      font-weight: bold;
+    }
+    .gridBodyContactUs .gridFooter{
+      grid-area: gridFooter;
+      background-color: #2D2D33;
+      grid-area: gridFooter;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "atencion workUs followUs";
+      align-items: center;
+    }
+
+    .gridBodyContactUs .gridFooter .workUs {
+      display: flex;
+      justify-content: center; }
+      .gridBodyContactUs .gridFooter .workUs button a {
+        text-decoration: none;
+        color: white;
+      }
+
+    .gridBodyContactUs .gridFooter .atencion {
+      padding-left: 50px; }
+    .gridBodyContactUs .gridFooter .atencion p {
+      color: white;
+      margin: 0px;
+    }
+    .gridBodyContactUs .gridFooter .followUs p {
+      color: white; }
+    .gridBodyContactUs .gridFooter .followUs {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .gridBodyContactUs .gridFooter .socialNetwork img {
+      width: 40px; }
+      .gridBodyContactUs .gridFooter .workUs button {
+        padding: 8px;
+        border-radius: 5px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        transition: all;
+        transition-duration: 1s;
+        color: white; }
+      .gridBodyContactUs .gridFooter .workUs button:hover {
+        background-color: #343636;
+        padding: 13px;
+        font-size: 18px;
+        transition: all 1s;
+        border: 1px solid red; }

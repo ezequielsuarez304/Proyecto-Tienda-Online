@@ -1,0 +1,38 @@
+$paleta-de-colores:(gris-oscuro:#2D2D33, gris:#37373F, gris-claro:#343636, verde:green,); 
+
+@mixin card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    border: 1px solid transparent;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+@mixin btn {
+    width: 200px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #222227;
+
+} 
+
+@mixin btn-hover {
+    background-color: map-get($paleta-de-colores, gris-claro );
+    padding: 9px;
+    font-size: 15px;
+    transition: all 1s;
+    border: 1px solid red;
+}
+
+
+
