@@ -253,3 +253,92 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .gridBodyContactUs {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "gridHelp"
+        "gridHeader"
+        "gridNav"
+        "sectionContactUs"
+        "gridFooter"; }
+
+.gridBodyContactUs .gridHeader{
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px;
+}
+
+.gridBodyContactUs .gridHeader .gridHeaderLogo{
+    padding-top: 20px;
+}
+
+.gridBodyContactUs .gridHeader .gridHeaderIcons{
+    padding-bottom: 20px;
+}
+
+
+.btnLogIn {
+        width: 240px;}
+
+.gridBodyContactUs .gridFooter {
+        grid-area: gridFooter;
+        display: flex;
+        flex-direction: column;
+        grid-template-areas: "atencion workUs followUs";
+        align-items: center;
+        gap: 4vh;
+        padding: 50px 0px;
+}
+.gridBodyContactUs .gridFooter .followUs p{
+        margin: 0px;
+}
+
+    .gridBodyContactUs .sectionContactUs p {
+        font-weight: bold;
+}
+
+    }
+
+    @media screen and (max-width: 500px) {
+        .gridBodyContactUs {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 6vh auto auto auto auto;
+        grid-template-areas: 
+        "gridHelp"
+        "gridHeader"
+        "gridNav"
+        "sectionContactUs"
+        "gridFooter"; }
+
+        .gridBodyContactUs .gridHeader .gridHeaderInput input{
+            width: 400px;
+        }
+
+}
+
+
+    @media screen and (max-width: 400px) {
+        .gridBodyContactUs {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 6vh auto auto auto auto;
+            grid-template-areas: 
+            "gridHelp"
+            "gridHeader"
+            "gridNav"
+            "sectionContactUs"
+            "gridFooter"; }
+
+            .gridBodyContactUs .gridHeader .gridHeaderInput input{
+            width: 300px;
+            }
+        .gridBodyContactUs .gridHeader .gridHeaderIcons .btnLogIn{
+            width: 180px;
+
+        }
+        }
