@@ -67,6 +67,11 @@
     display: flex;
     justify-content: end; }
 
+/* .carrito {
+    font-size: 30px;
+    color: green;
+    text-shadow: 4px 4px 2px blue;
+} */
 .mainHome img {
   width: 100%; }
 
